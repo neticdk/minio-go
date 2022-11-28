@@ -331,7 +331,7 @@ type CompletePart struct {
 
 // completeMultipartUpload container for completing multipart upload.
 type completeMultipartUpload struct {
-	XMLName xml.Name       `xml:"http://s3.amazonaws.com/doc/2006-03-01/ CompleteMultipartUpload" json:"-"`
+	XMLName xml.Name       `xml:"CompleteMultipartUpload" json:"-"`
 	Parts   []CompletePart `xml:"Part"`
 }
 
